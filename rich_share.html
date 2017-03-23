@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <!--for facebook-->
+    <meta property="og:title" content="{{video.title}}"/>
+    <meta property="og:description" content="{{video.published}}"/>
+    <meta property="og:image" content="{{video.thumbnail_link}}"/>
+    <!--for twitter-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{video.title}}"/>
+    <meta name="twitter:description" content="{{video.published}}"/>
+    <meta name="twitter:image" content="{{video.thumbnail_link}}"/>
+    <title></title>
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    //    To redirect to the original content page upon clicking the link
+    $(document).ready(function () {
+        window.location.href = window.location.origin + "/#/video/{{ video.slug }}"
+    });
+</script>
+<body>
+</body>
+</html>

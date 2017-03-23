@@ -1,0 +1,21 @@
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 social_share_widget">
+    Share with
+    <a data-toggle="tooltip"
+       ng-click="metaDescription=video.title"
+       title="Share on Facebook"
+       socialshare
+       socialshare-provider="facebook"
+       socialshare-url="{{location.protocol()}}://{{location.host()}}/api/videos/share-redirect-url/{{video.slug}}">
+        <i class="fa fa-facebook-official"></i>
+    </a>
+    <a data-toggle="tooltip"
+       title="Share on Google"
+       ng-click="metaDescription=video.title"
+       socialshare
+       socialshare-provider="google"
+       socialshare-url="{{location.protocol()}}://{{location.host()}}/api/videos/share-redirect-url/{{video.slug}}">
+        <i class="fa fa-google-plus"></i>
+    </a>
+</div>
+</div>
+	
